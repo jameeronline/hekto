@@ -11,17 +11,33 @@ export default {
       'blue': '#2F1AC4',
       'offblue': '#151875',
       'navyblue': '#151875',
+      'darlblue': '#0D0E43',
       'offnavyblue': '#3F509E',
+      'lightnavyblue': '#EEEFFB',
       'purple': '#7E33E0',
       'offpurple': '#9F63B5',
       'skyblue': '#F2F4FF',
       'pantonepurble': '#E0D3F5',
+      'regentgrey': '#8A8FB9',
+      'bluishcyan': '#00C1FE',
+      'black': '#000000',
+      'offwhite': '#F1F1F1',
+      'white': '#ffffff'
     },
     fontFamily: {
       josefin: ['Josefin Sans', 'sans-serif'],
       lato: ['Lato', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      fontSize: {
+        'h1': ['3.5rem', {
+          'lineHeight': '1.3',
+          'letterSpacing': '1.2'
+        }]
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
