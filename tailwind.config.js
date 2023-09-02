@@ -4,7 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {  
+  theme: {
     colors: {
       'pink': '#FB2E86',
       'red': '#FB2448',
@@ -28,14 +28,13 @@ export default {
       josefin: ['Josefin Sans', 'sans-serif'],
       lato: ['Lato', 'sans-serif'],
     },
-    extend: {
-      fontSize: {
-        'h1': ['3.5rem', {
-          'lineHeight': '1.3',
-          'letterSpacing': '1.2'
-        }]
-      }
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
     },
+    extend: {},
   },
   plugins: [
     require('@tailwindcss/forms'),
