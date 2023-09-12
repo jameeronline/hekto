@@ -173,7 +173,8 @@
               </ul>
             </nav>
             <form action="" class="flex ml-auto">
-              <input type="text" class="form-input border-offwhite" placeholder="Search" />
+              <label for="search" class="sr-only">Enter keywords to search</label>
+              <input type="text" class="form-input border-offwhite" placeholder="Search" id="search" />
               <button type="button" class="inline-block bg-pink py-2 px-4 text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
@@ -196,10 +197,43 @@
       <p class="font-lato text-base/normal text-max-w-3xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aut consequatur quisquam quae fugiat tempore necessitatibus, officiis impedit aliquam laborum consequuntur, perspiciatis sed ea, praesentium veniam fuga nam commodi atque?</p>
 
 
+      <section class="relative">
+        <img src="./src/images/newsletter-bg.png" alt="" class="object-fill" />
+        <div class="absolute flex flex-col items-center justify-center gap-6 left-1/2 top-1/2 -translate-y-2/4 -translate-x-2/4">
+          <h3 class="text-center text-navyblue text-3xl font-bold">Get Leatest Update By Subscribe 0ur Newslater</h3>
+          <!-- Component: Large primary basic button -->
+          <button class="inline-flex items-center justify-center h-12 gap-2 px-6 text-sm font-medium tracking-wide text-white transition duration-300 rounded focus-visible:outline-none whitespace-nowrap bg-pink hover:bg-emerald-600 focus:bg-emerald-700 disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
+            <span>Shop Now</span>
+          </button>
+          <!-- End Large primary basic button -->
+        </div>
+      </section>
 
+      <!-- START - Partners -->
+      <section class="my-10 lg:my-14 xl:my-24">
+        <!-- Component: Carousel with controls inside -->
+        <div class="relative xl:w-4/5 mx-auto glide-partners">
+          <!-- Slides -->
+          <div class="overflow-hidden" data-glide-el="track">
+              <ul class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
+                  <li class="flex items-center"><img src="./src/images/logos/dribbble-logo.svg" class="w-40 m-auto grayscale opacity-70" /></li>
+                  <li class="flex items-center"><img src="./src/images/logos/dropbox-logo.svg" class="w-40 m-auto grayscale opacity-70" /></li>
+                  <li class="flex items-center"><img src="./src/images/logos/github-logo.svg" class="w-40 m-auto grayscale opacity-70" /></li>
+                  <li class="flex items-center"><img src="./src/images/logos/jira-software-logo.svg" class="w-40 m-auto grayscale opacity-70" /></li>
+                  <li class="flex items-center"><img src="./src/images/logos/miro-logo.svg" class="w-40 m-auto grayscale opacity-70" /></li>
+                  <li class="flex items-center"><img src="./src/images/logos/pingdom-logo.svg" class="w-40 m-auto grayscale opacity-70" /></li>
+                  <li class="flex items-center"><img src="./src/images/logos/unsplash-logo.svg" class="w-40 m-auto grayscale opacity-70" /></li>
+                  <li class="flex items-center"><img src="./src/images/logos/webflow-logo.svg" class="w-40 m-auto grayscale opacity-70" /></li>
+              </ul>
+          </div>
+        </div>
+      <!-- End Carousel with controls inside -->
+      </section>
+      <!-- END - Partners -->
 
+      <!-- START - Latest Blogs -->
       <section class="my-10">
-        <h2 class="text-center text-navyblue text-4xl mb-20 font-bold">Leatest Blog</h2>
+        <h2 class="text-center text-navyblue text-2xl mb-6 lg:text-4xl lg:mb-20 font-bold">Leatest Blog</h2>
         <div class="grid grid-cols-4 gap-8 md:grid-cols-8 lg:grid-cols-12 lg:gap-14 ">
           <div class="col-span-4">
             <!-- Component: Blog card with avatar -->
@@ -320,10 +354,10 @@
           </div>
         </div>
       </section>
+      <!-- END - Latest Blogs -->
+
     </div>
     <!-- END - Main -->
-
-
 
     <!-- START - Footer -->
     <footer class="text-regentgrey font-lato">
