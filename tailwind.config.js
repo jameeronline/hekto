@@ -2,6 +2,7 @@
 export default {
   content: [
     "./index.html",
+    "./main.js",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
@@ -12,10 +13,13 @@ export default {
       'xl': '1280px',
     },
     extend: {
+      backgroundImage: {
+        'news-lettern': "url('./src/images/newsletter-bg.png')",
+      },
       colors: {
         'pink': '#FB2E86',
         'red': '#FB2448',
-        'blue': '#2F1AC4',
+        // 'blue': '#2F1AC4',
         'offblue': '#151875',
         'navyblue': '#151875',
         'darlblue': '#0D0E43',

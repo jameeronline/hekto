@@ -5,8 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="/hekto/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <script type="module" crossorigin src="/hekto/assets/index-302f3b57.js"></script>
-    <link rel="stylesheet" href="/hekto/assets/index-e2c6ad32.css">
+    <script type="module" crossorigin src="/hekto/assets/index-ed2fc1f6.js"></script>
+    <link rel="stylesheet" href="/hekto/assets/index-b4275fb8.css">
   </head>
   <body class="font-josefin text-base leading-none">
     <!-- START - Header -->
@@ -198,113 +198,628 @@
       </h1>
       <p class="font-lato text-base/normal text-max-w-3xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aut consequatur quisquam quae fugiat tempore necessitatibus, officiis impedit aliquam laborum consequuntur, perspiciatis sed ea, praesentium veniam fuga nam commodi atque?</p>
 
-
-
-      <!-- START - Latest Blogs -->
+      <!-- START - Featured Products -->
       <section class="my-10">
         <div class="container px-6 mx-auto">
-          <h2 class="text-center text-tertiary-950 text-2xl mb-6 lg:text-4xl lg:mb-20 font-bold">Top Categories</h2>
-          <div class="grid grid-cols-4 gap-8 md:grid-cols-8 lg:grid-cols-12 lg:gap-14">
+          <h2 class="text-center text-tertiary-950 text-2xl mb-6 lg:text-4xl lg:mb-12 font-bold">Featured Products</h2>
 
-            <div class="col-span-4 lg:col-span-3">
-              <!-- Component: Blog card with avatar -->
-              <a href="#" class="overflow-hidden group">
-                <!-- Image -->
-                <figure class="rounded-full aspect-square bg-slate-100 group-hover:bg-slate-200 relative flex items-center justify-center">
-                  <img src="/hekto/assets/1-8a065be5.png" alt="card image" class="w-44" />
-                  <!-- Component: Base primary basic button -->
-                  <button class="absolute bottom-6 opacity-0 group-hover:opacity-100 inline-flex items-center justify-center h-10 gap-2 px-5 text-sm font-medium tracking-wide text-white transition duration-300 rounded focus-visible:outline-none whitespace-nowrap bg-emerald-500 hover:bg-emerald-600 focus:bg-emerald-700 disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
-                    <span>Base button</span>
-                  </button>
-                  <!-- End Base primary basic button -->
-                </figure>
-                <!-- Body-->
-                <div class="px-6 pt-5 pb-9">
-                  <header class="flex flex-col items-center gap-1 mb-4 text-tertiary-950">
-                    <h3 class="text-xl font-semibold ">Mini LCW Chair</h3>
-                    <p class="font-lato leading-7 ">$56.00</p>
-                  </header>
-                </div>
-              </a>
-              <!-- End Blog card with avatar -->
+          <!-- Component: carousel -->
+          <div class="relative overflow-hidden w-full" id="glide-featured">
+            <!-- Slides -->
+            <div data-glide-el="track">
+                <ul class="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0 py-6">
+                    <li>
+                      <!-- Component: E-commerce card -->
+                      <article class="group overflow-hidden bg-white rounded-lg shadow-[0px_0px_16px_0px_rgba(0,0,0,0.05)] text-slate-500 shadow-slate-100 transition-colors">
+                        <!-- Image -->
+                        <figure class="relative overflow-hidden aspect-square w-full bg-tertiary-50 flex items-center justify-center">
+                          <ul class="list-none inline-flex absolute z-10 -top-3 left-3 opacity-0 transition-all group-hover:opacity-100 group-hover:top-3">
+                            <li>
+                              <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-blue-500 transition-colors hover:bg-tertiary-200 hover:text-blue-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-blue-500 transition-colors hover:bg-tertiary-200 hover:text-blue-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                </svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-blue-500 transition-colors hover:bg-tertiary-200 hover:text-blue-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
+                                </svg>
+                              </a>
+                            </li>
+                          </ul>
+
+                          <img src="/hekto/assets/1-2f0de3d1.png" alt="card image" class="transition-transform duration-300 scale-[0.6] group-hover:scale-75" />
+
+                          <!-- Component: Base primary basic button -->
+                          <button class="absolute bottom-0 opacity-0 inline-flex items-center justify-center h-10 gap-2 px-5 font-lato text-sm font-medium tracking-wide text-white transition-all duration-300 rounded group-hover:opacity-100 group-hover:bottom-8 focus-visible:outline-none whitespace-nowrap bg-emerald-500 hover:bg-emerald-600 focus:bg-emerald-700 disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
+                            <span>View Details</span>
+                          </button>
+                          <!-- End Base primary basic button -->
+                        </figure>
+                        <!-- Body-->
+                        <div class="p-6 text-center transition-colors group-hover:bg-blue-800">
+                          <header class="mb-4">
+                            <h3 class="text-xl font-bold text-primary-500 group-hover:text-white">Cantilever chair</h3>
+                            <ul class="list-none">
+                              <li class="inline-block bg-teal-300 rounded-md h-1 w-4"></li>
+                              <li class="inline-block bg-primary-600 rounded-md h-1 w-4"></li>
+                              <li class="inline-block bg-blue-900 group-hover:bg-yellow-200 rounded-md h-1 w-4"></li>
+                            </ul>
+                          </header>
+                          <p class="text-blue-900 font-bold mb-3 group-hover:text-white">Code - Y523201</p>
+                          <p class="text-blue-900 group-hover:text-white">$42.00</p>
+                        </div>
+                      </article>
+                      <!-- End E-commerce card -->
+                    </li>
+                    <li>
+                      <!-- Component: E-commerce card -->
+                      <article class="group overflow-hidden bg-white rounded-lg shadow-[0px_0px_16px_0px_rgba(0,0,0,0.05)] text-slate-500 shadow-slate-100 transition-colors">
+                        <!-- Image -->
+                        <figure class="relative overflow-hidden aspect-square w-full bg-tertiary-50 flex items-center justify-center">
+                          <ul class="list-none inline-flex absolute z-10 -top-3 left-3 opacity-0 transition-all group-hover:opacity-100 group-hover:top-3">
+                            <li>
+                              <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-blue-500 transition-colors hover:bg-tertiary-200 hover:text-blue-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-blue-500 transition-colors hover:bg-tertiary-200 hover:text-blue-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                </svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-blue-500 transition-colors hover:bg-tertiary-200 hover:text-blue-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
+                                </svg>
+                              </a>
+                            </li>
+                          </ul>
+
+                          <img src="/hekto/assets/2-74ba1c8c.png" alt="card image" class="transition-transform duration-300 scale-[0.6] group-hover:scale-75" />
+
+                          <!-- Component: Base primary basic button -->
+                          <button class="absolute bottom-0 opacity-0 inline-flex items-center justify-center h-10 gap-2 px-5 font-lato text-sm font-medium tracking-wide text-white transition-all duration-300 rounded group-hover:opacity-100 group-hover:bottom-8 focus-visible:outline-none whitespace-nowrap bg-emerald-500 hover:bg-emerald-600 focus:bg-emerald-700 disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
+                            <span>View Details</span>
+                          </button>
+                          <!-- End Base primary basic button -->
+                        </figure>
+                        <!-- Body-->
+                        <div class="p-6 text-center transition-colors group-hover:bg-blue-800">
+                          <header class="mb-4">
+                            <h3 class="text-xl font-bold text-primary-500 group-hover:text-white">Cantilever chair</h3>
+                            <ul class="list-none">
+                              <li class="inline-block bg-teal-300 rounded-md h-1 w-4"></li>
+                              <li class="inline-block bg-primary-600 rounded-md h-1 w-4"></li>
+                              <li class="inline-block bg-blue-900 group-hover:bg-yellow-200 rounded-md h-1 w-4"></li>
+                            </ul>
+                          </header>
+                          <p class="text-blue-900 font-bold mb-3 group-hover:text-white">Code - Y523201</p>
+                          <p class="text-blue-900 group-hover:text-white">$42.00</p>
+                        </div>
+                      </article>
+                      <!-- End E-commerce card -->
+                    </li>
+                    <li>
+                      <!-- Component: E-commerce card -->
+                      <article class="group overflow-hidden bg-white rounded-lg shadow-[0px_0px_16px_0px_rgba(0,0,0,0.05)] text-slate-500 shadow-slate-100 transition-colors">
+                        <!-- Image -->
+                        <figure class="relative overflow-hidden aspect-square w-full bg-tertiary-50 flex items-center justify-center">
+                          <ul class="list-none inline-flex absolute z-10 -top-3 left-3 opacity-0 transition-all group-hover:opacity-100 group-hover:top-3">
+                            <li>
+                              <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-blue-500 transition-colors hover:bg-tertiary-200 hover:text-blue-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-blue-500 transition-colors hover:bg-tertiary-200 hover:text-blue-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                </svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-blue-500 transition-colors hover:bg-tertiary-200 hover:text-blue-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
+                                </svg>
+                              </a>
+                            </li>
+                          </ul>
+
+                          <img src="/hekto/assets/3-d73d2681.png" alt="card image" class="transition-transform duration-300 scale-[0.6] group-hover:scale-75" />
+
+                          <!-- Component: Base primary basic button -->
+                          <button class="absolute bottom-0 opacity-0 inline-flex items-center justify-center h-10 gap-2 px-5 font-lato text-sm font-medium tracking-wide text-white transition-all duration-300 rounded group-hover:opacity-100 group-hover:bottom-8 focus-visible:outline-none whitespace-nowrap bg-emerald-500 hover:bg-emerald-600 focus:bg-emerald-700 disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
+                            <span>View Details</span>
+                          </button>
+                          <!-- End Base primary basic button -->
+                        </figure>
+                        <!-- Body-->
+                        <div class="p-6 text-center transition-colors group-hover:bg-blue-800">
+                          <header class="mb-4">
+                            <h3 class="text-xl font-bold text-primary-500 group-hover:text-white">Cantilever chair</h3>
+                            <ul class="list-none">
+                              <li class="inline-block bg-teal-300 rounded-md h-1 w-4"></li>
+                              <li class="inline-block bg-primary-600 rounded-md h-1 w-4"></li>
+                              <li class="inline-block bg-blue-900 group-hover:bg-yellow-200 rounded-md h-1 w-4"></li>
+                            </ul>
+                          </header>
+                          <p class="text-blue-900 font-bold mb-3 group-hover:text-white">Code - Y523201</p>
+                          <p class="text-blue-900 group-hover:text-white">$42.00</p>
+                        </div>
+                      </article>
+                      <!-- End E-commerce card -->
+                    </li>
+                    <li>
+                      <!-- Component: E-commerce card -->
+                      <article class="group overflow-hidden bg-white rounded-lg shadow-[0px_0px_16px_0px_rgba(0,0,0,0.05)] text-slate-500 shadow-slate-100 transition-colors">
+                        <!-- Image -->
+                        <figure class="relative overflow-hidden aspect-square w-full bg-tertiary-50 flex items-center justify-center">
+                          <ul class="list-none inline-flex absolute z-10 -top-3 left-3 opacity-0 transition-all group-hover:opacity-100 group-hover:top-3">
+                            <li>
+                              <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-blue-500 transition-colors hover:bg-tertiary-200 hover:text-blue-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-blue-500 transition-colors hover:bg-tertiary-200 hover:text-blue-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                </svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-blue-500 transition-colors hover:bg-tertiary-200 hover:text-blue-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
+                                </svg>
+                              </a>
+                            </li>
+                          </ul>
+
+                          <img src="/hekto/assets/4-ca26ad50.png" alt="card image" class="transition-transform duration-300 scale-[0.6] group-hover:scale-75" />
+
+                          <!-- Component: Base primary basic button -->
+                          <button class="absolute bottom-0 opacity-0 inline-flex items-center justify-center h-10 gap-2 px-5 font-lato text-sm font-medium tracking-wide text-white transition-all duration-300 rounded group-hover:opacity-100 group-hover:bottom-8 focus-visible:outline-none whitespace-nowrap bg-emerald-500 hover:bg-emerald-600 focus:bg-emerald-700 disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
+                            <span>View Details</span>
+                          </button>
+                          <!-- End Base primary basic button -->
+                        </figure>
+                        <!-- Body-->
+                        <div class="p-6 text-center transition-colors group-hover:bg-blue-800">
+                          <header class="mb-4">
+                            <h3 class="text-xl font-bold text-primary-500 group-hover:text-white">Cantilever chair</h3>
+                            <ul class="list-none">
+                              <li class="inline-block bg-teal-300 rounded-md h-1 w-4"></li>
+                              <li class="inline-block bg-primary-600 rounded-md h-1 w-4"></li>
+                              <li class="inline-block bg-blue-900 group-hover:bg-yellow-200 rounded-md h-1 w-4"></li>
+                            </ul>
+                          </header>
+                          <p class="text-blue-900 font-bold mb-3 group-hover:text-white">Code - Y523201</p>
+                          <p class="text-blue-900 group-hover:text-white">$42.00</p>
+                        </div>
+                      </article>
+                      <!-- End E-commerce card -->
+                    </li>
+                </ul>
             </div>
-
-            <div class="col-span-4 lg:col-span-3">
-              <!-- Component: Blog card with avatar -->
-              <a href="#" class="overflow-hidden group">
-                <!-- Image -->
-                <figure class="rounded-full aspect-square bg-slate-100 group-hover:bg-slate-200 relative flex items-center justify-center">
-                  <img src="/hekto/assets/2-2f0de3d1.png" alt="card image" class="w-44" />
-                  <!-- Component: Base primary basic button -->
-                  <button class="absolute bottom-6 opacity-0 group-hover:opacity-100 inline-flex items-center justify-center h-10 gap-2 px-5 text-sm font-medium tracking-wide text-white transition duration-300 rounded focus-visible:outline-none whitespace-nowrap bg-emerald-500 hover:bg-emerald-600 focus:bg-emerald-700 disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
-                    <span>Base button</span>
-                  </button>
-                  <!-- End Base primary basic button -->
-                </figure>
-                <!-- Body-->
-                <div class="px-6 pt-5 pb-9">
-                  <header class="flex flex-col items-center gap-1 mb-4 text-tertiary-950">
-                    <h3 class="text-xl font-semibold ">Mini LCW Chair</h3>
-                    <p class="font-lato leading-7 ">$56.00</p>
-                  </header>
-                </div>
-              </a>
-              <!-- End Blog card with avatar -->
+            <!-- Indicators -->
+            <div class="flex items-center justify-center w-full gap-2 mt-8" data-glide-el="controls[nav]">
+                <button class="group" data-glide-dir="=0" aria-label="goto slide 1"><span class="block h-1 w-4 transition-colors duration-300 rounded-full opacity-70 bg-primary-200 bg-white/20 focus:outline-none"></span></button>
+                <button class="group" data-glide-dir="=1" aria-label="goto slide 2"><span class="block h-1 w-4 transition-colors duration-300 rounded-full opacity-70 bg-primary-200 bg-white/20 focus:outline-none"></span></button>
+                <button class="group" data-glide-dir="=2" aria-label="goto slide 3"><span class="block h-1 w-4 transition-colors duration-300 rounded-full opacity-70 bg-primary-200 bg-white/20 focus:outline-none"></span></button>
+                <button class="group" data-glide-dir="=3" aria-label="goto slide 4"><span class="block h-1 w-4 transition-colors duration-300 rounded-full opacity-70 bg-primary-200 bg-white/20 focus:outline-none"></span></button>
             </div>
-
-            <div class="col-span-4 lg:col-span-3">
-              <!-- Component: Blog card with avatar -->
-              <a href="#" class="overflow-hidden group">
-                <!-- Image -->
-                <figure class="rounded-full aspect-square bg-slate-100 group-hover:bg-slate-200 relative flex items-center justify-center">
-                  <img src="/hekto/assets/3-d7f0190f.png" alt="card image" class="w-44" />
-                  <!-- Component: Base primary basic button -->
-                  <button class="absolute bottom-6 opacity-0 group-hover:opacity-100 inline-flex items-center justify-center h-10 gap-2 px-5 text-sm font-medium tracking-wide text-white transition duration-300 rounded focus-visible:outline-none whitespace-nowrap bg-emerald-500 hover:bg-emerald-600 focus:bg-emerald-700 disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
-                    <span>Base button</span>
-                  </button>
-                  <!-- End Base primary basic button -->
-                </figure>
-                <!-- Body-->
-                <div class="px-6 pt-5 pb-9">
-                  <header class="flex flex-col items-center gap-1 mb-4 text-tertiary-950">
-                    <h3 class="text-xl font-semibold ">Mini LCW Chair</h3>
-                    <p class="font-lato leading-7 ">$56.00</p>
-                  </header>
-                </div>
-              </a>
-              <!-- End Blog card with avatar -->
-            </div>
-
-            <div class="col-span-4 lg:col-span-3">
-              <!-- Component: Blog card with avatar -->
-              <a href="#" class="overflow-hidden group">
-                <!-- Image -->
-                <figure class="rounded-full aspect-square bg-slate-100 group-hover:bg-slate-200 relative flex items-center justify-center">
-                  <img src="/hekto/assets/1-8a065be5.png" alt="card image" class="w-44" />
-                  <!-- Component: Base primary basic button -->
-                  <button class="absolute bottom-6 opacity-0 group-hover:opacity-100 inline-flex items-center justify-center h-10 gap-2 px-5 text-sm font-medium tracking-wide text-white transition duration-300 rounded focus-visible:outline-none whitespace-nowrap bg-emerald-500 hover:bg-emerald-600 focus:bg-emerald-700 disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
-                    <span>Base button</span>
-                  </button>
-                  <!-- End Base primary basic button -->
-                </figure>
-                <!-- Body-->
-                <div class="px-6 pt-5 pb-9">
-                  <header class="flex flex-col items-center gap-1 mb-4 text-tertiary-950">
-                    <h3 class="text-xl font-semibold ">Mini LCW Chair</h3>
-                    <p class="font-lato leading-7 ">$56.00</p>
-                  </header>
-                </div>
-              </a>
-              <!-- End Blog card with avatar -->
-            </div>
-
           </div>
+          <!-- End carousel -->
         </div>
       </section>
-      <!-- END - Latest Blogs -->
+      <!-- END - Featured Products -->
+
+
+      <!-- START - Latest Products -->
+      <section class="my-10">
+        <div class="container px-6 mx-auto">
+          <h2 class="text-center text-tertiary-950 text-2xl mb-5 font-bold lg:text-4xl">Latest Products</h2>
+
+          <nav class="flex justify-center gap-6 mb-14">
+            <a href="#" class="text-tertiary-950 transition-colors duration-300 hover:text-primary-500 hover:underline">New Arrival</a>
+            <a href="#" class="text-tertiary-950 transition-colors duration-300 hover:text-primary-500 hover:underline">Best Seller</a>
+            <a href="#" class="text-tertiary-950 transition-colors duration-300 hover:text-primary-500 hover:underline">Featured</a>
+            <a href="#" class="text-tertiary-950 transition-colors duration-300 hover:text-primary-500 hover:underline">Special Offer</a>
+          </nav>
+
+          <!-- Component: grid -->
+          <div class="relative overflow-hidden w-full" id="grid-latest-products">
+            <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
+              <div class="col-span-2 md:col-span-4">
+                <!-- Component: Latest card -->
+                <article class="group overflow-hidden">
+                  <!-- Image -->
+                  <figure class="relative overflow-hidden aspect-[4/3] w-full bg-neutral-50 flex items-center justify-center">
+                    <ul class="list-none inline-flex flex-col-reverse absolute z-10 -bottom-3 left-3 opacity-0 transition-all group-hover:opacity-100 group-hover:bottom-3">
+                      <li>
+                        <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-tertiary-800 transition-colors hover:bg-tertiary-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-tertiary-800 transition-colors hover:bg-tertiary-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-tertiary-800 transition-colors hover:bg-tertiary-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+
+                    <img src="/hekto/assets/5-2610d59f.png" alt="card image" class="transition-transform duration-300 scale-[0.6] group-hover:scale-75" />
+                  </figure>
+                  <!-- Body-->
+                  <div class="py-6 text-center">
+                    <header class="flex items-center justify-between">
+                      <h6 class="font-bold text-blue-900 underline underline-offset-8 decoration-blue-900/10">Comfort Handy Craft</h6>
+                      <p class="text-blue-900 inline-flex gap-2 items-center">$42.00 <u class="text-primary-600 text-xs">$65.00</u></p>
+                    </header>
+                  </div>
+                </article>
+                <!-- End Latest card -->
+              </div>
+              <div class="col-span-2 md:col-span-4">
+                <!-- Component: Latest card -->
+                <article class="group overflow-hidden">
+                  <!-- Image -->
+                  <figure class="relative overflow-hidden aspect-[4/3] w-full bg-neutral-50 flex items-center justify-center">
+                    <ul class="list-none inline-flex flex-col-reverse absolute z-10 -bottom-3 left-3 opacity-0 transition-all group-hover:opacity-100 group-hover:bottom-3">
+                      <li>
+                        <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-tertiary-800 transition-colors hover:bg-tertiary-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-tertiary-800 transition-colors hover:bg-tertiary-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-tertiary-800 transition-colors hover:bg-tertiary-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+
+                    <img src="/hekto/assets/6-95bd5026.png" alt="card image" class="transition-transform duration-300 scale-[0.6] group-hover:scale-75" />
+                  </figure>
+                  <!-- Body-->
+                  <div class="py-6 text-center">
+                    <header class="flex items-center justify-between">
+                      <h6 class="font-bold text-blue-900 underline underline-offset-8 decoration-blue-900/10">Comfort Handy Craft</h6>
+                      <p class="text-blue-900 inline-flex gap-2 items-center">$42.00 <u class="text-primary-600 text-xs">$65.00</u></p>
+                    </header>
+                  </div>
+                </article>
+                <!-- End Latest card -->
+              </div>
+              <div class="col-span-2 md:col-span-4">
+                <!-- Component: Latest card -->
+                <article class="group overflow-hidden">
+                  <!-- Image -->
+                  <figure class="relative overflow-hidden aspect-[4/3] w-full bg-neutral-50 flex items-center justify-center">
+                    <ul class="list-none inline-flex flex-col-reverse absolute z-10 -bottom-3 left-3 opacity-0 transition-all group-hover:opacity-100 group-hover:bottom-3">
+                      <li>
+                        <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-tertiary-800 transition-colors hover:bg-tertiary-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-tertiary-800 transition-colors hover:bg-tertiary-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-tertiary-800 transition-colors hover:bg-tertiary-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+
+                    <img src="/hekto/assets/1-2f0de3d1.png" alt="card image" class="transition-transform duration-300 scale-[0.6] group-hover:scale-75" />
+                  </figure>
+                  <!-- Body-->
+                  <div class="py-6 text-center">
+                    <header class="flex items-center justify-between">
+                      <h6 class="font-bold text-blue-900 underline underline-offset-8 decoration-blue-900/10">Comfort Handy Craft</h6>
+                      <p class="text-blue-900 inline-flex gap-2 items-center">$42.00 <u class="text-primary-600 text-xs">$65.00</u></p>
+                    </header>
+                  </div>
+                </article>
+                <!-- End Latest card -->
+              </div>
+              <div class="col-span-2 md:col-span-4">
+                <!-- Component: Latest card -->
+                <article class="group overflow-hidden">
+                  <!-- Image -->
+                  <figure class="relative overflow-hidden aspect-[4/3] w-full bg-neutral-50 flex items-center justify-center">
+                    <ul class="list-none inline-flex flex-col-reverse absolute z-10 -bottom-3 left-3 opacity-0 transition-all group-hover:opacity-100 group-hover:bottom-3">
+                      <li>
+                        <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-tertiary-800 transition-colors hover:bg-tertiary-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-tertiary-800 transition-colors hover:bg-tertiary-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-tertiary-800 transition-colors hover:bg-tertiary-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+
+                    <img src="/hekto/assets/7-05697d60.png" alt="card image" class="transition-transform duration-300 scale-[0.6] group-hover:scale-75" />
+                  </figure>
+                  <!-- Body-->
+                  <div class="py-6 text-center">
+                    <header class="flex items-center justify-between">
+                      <h6 class="font-bold text-blue-900 underline underline-offset-8 decoration-blue-900/10">Comfort Handy Craft</h6>
+                      <p class="text-blue-900 inline-flex gap-2 items-center">$42.00 <u class="text-primary-600 text-xs">$65.00</u></p>
+                    </header>
+                  </div>
+                </article>
+                <!-- End Latest card -->
+              </div>
+              <div class="col-span-2 md:col-span-4">
+                <!-- Component: Latest card -->
+                <article class="group overflow-hidden">
+                  <!-- Image -->
+                  <figure class="relative overflow-hidden aspect-[4/3] w-full bg-neutral-50 flex items-center justify-center">
+                    <ul class="list-none inline-flex flex-col-reverse absolute z-10 -bottom-3 left-3 opacity-0 transition-all group-hover:opacity-100 group-hover:bottom-3">
+                      <li>
+                        <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-tertiary-800 transition-colors hover:bg-tertiary-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-tertiary-800 transition-colors hover:bg-tertiary-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-tertiary-800 transition-colors hover:bg-tertiary-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+
+                    <img src="/hekto/assets/8-d3f4c1b1.png" alt="card image" class="transition-transform duration-300 scale-[0.6] group-hover:scale-75" />
+                  </figure>
+                  <!-- Body-->
+                  <div class="py-6 text-center">
+                    <header class="flex items-center justify-between">
+                      <h6 class="font-bold text-blue-900 underline underline-offset-8 decoration-blue-900/10">Comfort Handy Craft</h6>
+                      <p class="text-blue-900 inline-flex gap-2 items-center">$42.00 <u class="text-primary-600 text-xs">$65.00</u></p>
+                    </header>
+                  </div>
+                </article>
+                <!-- End Latest card -->
+              </div>
+              <div class="col-span-2 md:col-span-4">
+                <!-- Component: Latest card -->
+                <article class="group overflow-hidden">
+                  <!-- Image -->
+                  <figure class="relative overflow-hidden aspect-[4/3] w-full bg-neutral-50 flex items-center justify-center">
+                    <ul class="list-none inline-flex flex-col-reverse absolute z-10 -bottom-3 left-3 opacity-0 transition-all group-hover:opacity-100 group-hover:bottom-3">
+                      <li>
+                        <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-tertiary-800 transition-colors hover:bg-tertiary-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-tertiary-800 transition-colors hover:bg-tertiary-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="inline-flex w-8 h-8 items-center justify-center rounded-full text-tertiary-800 transition-colors hover:bg-tertiary-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+
+                    <img src="/hekto/assets/4-ca26ad50.png" alt="card image" class="transition-transform duration-300 scale-[0.6] group-hover:scale-75" />
+                  </figure>
+                  <!-- Body-->
+                  <div class="py-6 text-center">
+                    <header class="flex items-center justify-between">
+                      <h6 class="font-bold text-blue-900 underline underline-offset-8 decoration-blue-900/10">Comfort Handy Craft</h6>
+                      <p class="text-blue-900 inline-flex gap-2 items-center">$42.00 <u class="text-primary-600 text-xs">$65.00</u></p>
+                    </header>
+                  </div>
+                </article>
+                <!-- End Latest card -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- END - Latest Products -->
+
+
+      <!-- START - Top Categories -->
+      <section class="my-10">
+        <div class="container px-6 mx-auto">
+          <h2 class="text-center text-tertiary-950 text-2xl mb-6 lg:text-4xl lg:mb-14 font-bold">Top Categories</h2>
+
+          <!-- Component: carousel -->
+          <div class="relative overflow-hidden w-full" id="glide-categories">
+            <!-- Slides -->
+            <div data-glide-el="track">
+                <ul class="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
+                    <li>
+                      <!-- Component: Blog card with avatar -->
+                      <a href="#" class="overflow-hidden group">
+                        <!-- Image -->
+                        <figure class="rounded-full overflow-hidden aspect-square bg-slate-100 group-hover:bg-slate-200 relative flex items-center justify-center">
+                          <img src="/hekto/assets/1-8a065be5.png" alt="card image" class="w-44 transition-transform duration-300 group-hover:scale-110" />
+                          <!-- Component: Base primary basic button -->
+                          <button class="absolute bottom-0 opacity-0 inline-flex items-center justify-center h-10 gap-2 px-5 font-lato text-sm font-medium tracking-wide text-white transition-all duration-300 rounded group-hover:opacity-100 group-hover:bottom-8 focus-visible:outline-none whitespace-nowrap bg-emerald-500 hover:bg-emerald-600 focus:bg-emerald-700 disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
+                            <span>View Shop</span>
+                          </button>
+                          <!-- End Base primary basic button -->
+                        </figure>
+                        <!-- Body-->
+                        <div class="px-6 pt-5 pb-9">
+                          <header class="flex flex-col items-center gap-1 mb-4 text-tertiary-950 ">
+                            <h3 class="text-xl font-semibold ">Mini LCW Chair</h3>
+                            <p class="font-lato leading-7 group-hover:text-primary-500">$56.00</p>
+                          </header>
+                        </div>
+                      </a>
+                      <!-- End Blog card with avatar -->
+                    </li>
+                    <li>
+                      <!-- Component: Blog card with avatar -->
+                      <a href="#" class="overflow-hidden group">
+                        <!-- Image -->
+                        <figure class="rounded-full overflow-hidden aspect-square bg-slate-100 group-hover:bg-slate-200 relative flex items-center justify-center">
+                          <img src="/hekto/assets/1-2f0de3d1.png" alt="card image" class="w-44 transition-transform duration-300 group-hover:scale-110" />
+                          <!-- Component: Base primary basic button -->
+                          <button class="absolute bottom-0 opacity-0 inline-flex items-center justify-center h-10 gap-2 px-5 font-lato text-sm font-medium tracking-wide text-white transition-all duration-300 rounded group-hover:opacity-100 group-hover:bottom-8 focus-visible:outline-none whitespace-nowrap bg-emerald-500 hover:bg-emerald-600 focus:bg-emerald-700 disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
+                            <span>View Shop</span>
+                          </button>
+                          <!-- End Base primary basic button -->
+                        </figure>
+                        <!-- Body-->
+                        <div class="px-6 pt-5 pb-9">
+                          <header class="flex flex-col items-center gap-1 mb-4 text-tertiary-950 ">
+                            <h3 class="text-xl font-semibold ">Mini LCW Chair</h3>
+                            <p class="font-lato leading-7 group-hover:text-primary-500">$56.00</p>
+                          </header>
+                        </div>
+                      </a>
+                      <!-- End Blog card with avatar -->
+                    </li>
+                    <li>
+                      <!-- Component: Blog card with avatar -->
+                      <a href="#" class="overflow-hidden group">
+                        <!-- Image -->
+                        <figure class="rounded-full overflow-hidden aspect-square bg-slate-100 group-hover:bg-slate-200 relative flex items-center justify-center">
+                          <img src="/hekto/assets/3-d7f0190f.png" alt="card image" class="w-44 transition-transform duration-300 group-hover:scale-110" />
+                          <!-- Component: Base primary basic button -->
+                          <button class="absolute bottom-0 opacity-0 inline-flex items-center justify-center h-10 gap-2 px-5 font-lato text-sm font-medium tracking-wide text-white transition-all duration-300 rounded group-hover:opacity-100 group-hover:bottom-8 focus-visible:outline-none whitespace-nowrap bg-emerald-500 hover:bg-emerald-600 focus:bg-emerald-700 disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
+                            <span>View Shop</span>
+                          </button>
+                          <!-- End Base primary basic button -->
+                        </figure>
+                        <!-- Body-->
+                        <div class="px-6 pt-5 pb-9">
+                          <header class="flex flex-col items-center gap-1 mb-4 text-tertiary-950 ">
+                            <h3 class="text-xl font-semibold ">Mini LCW Chair</h3>
+                            <p class="font-lato leading-7 group-hover:text-primary-500">$56.00</p>
+                          </header>
+                        </div>
+                      </a>
+                      <!-- End Blog card with avatar -->
+                    </li>
+                    <li>
+                      <!-- Component: Blog card with avatar -->
+                      <a href="#" class="overflow-hidden group">
+                        <!-- Image -->
+                        <figure class="rounded-full overflow-hidden aspect-square bg-slate-100 group-hover:bg-slate-200 relative flex items-center justify-center">
+                          <img src="/hekto/assets/1-8a065be5.png" alt="card image" class="w-44 transition-transform duration-300 group-hover:scale-110" />
+                          <!-- Component: Base primary basic button -->
+                          <button class="absolute bottom-0 opacity-0 inline-flex items-center justify-center h-10 gap-2 px-5 font-lato text-sm font-medium tracking-wide text-white transition-all duration-300 rounded group-hover:opacity-100 group-hover:bottom-8 focus-visible:outline-none whitespace-nowrap bg-emerald-500 hover:bg-emerald-600 focus:bg-emerald-700 disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
+                            <span>View Shop</span>
+                          </button>
+                          <!-- End Base primary basic button -->
+                        </figure>
+                        <!-- Body-->
+                        <div class="px-6 pt-5 pb-9">
+                          <header class="flex flex-col items-center gap-1 mb-4 text-tertiary-950 ">
+                            <h3 class="text-xl font-semibold ">Mini LCW Chair</h3>
+                            <p class="font-lato leading-7 group-hover:text-primary-500">$56.00</p>
+                          </header>
+                        </div>
+                      </a>
+                      <!-- End Blog card with avatar -->
+                    </li>
+                </ul>
+            </div>
+            <!-- Indicators -->
+            <div class="flex items-center justify-center w-full gap-2 -mt-6" data-glide-el="controls[nav]">
+                <button class="p-2 group" data-glide-dir="=0" aria-label="goto slide 1"><span class="block w-2 h-2 transition-colors duration-300 rounded-full opacity-70 ring-1 ring-primary-500 bg-white/20 focus:outline-none"></span></button>
+                <button class="p-2 group" data-glide-dir="=1" aria-label="goto slide 2"><span class="block w-2 h-2 transition-colors duration-300 rounded-full opacity-70 ring-1 ring-primary-500 bg-white/20 focus:outline-none"></span></button>
+                <button class="p-2 group" data-glide-dir="=2" aria-label="goto slide 3"><span class="block w-2 h-2 transition-colors duration-300 rounded-full opacity-70 ring-1 ring-primary-500 bg-white/20 focus:outline-none"></span></button>
+                <button class="p-2 group" data-glide-dir="=3" aria-label="goto slide 4"><span class="block w-2 h-2 transition-colors duration-300 rounded-full opacity-70 ring-1 ring-primary-500 bg-white/20 focus:outline-none"></span></button>
+            </div>
+          </div>
+          <!-- End carousel -->
+        </div>
+      </section>
+      <!-- END - Top Categories -->
 
       <!-- START - newsletter -->
-      <section class="relative bg-[url('./src/images/newsletter-bg.png')] bg-cover">
+      <section class="relative bg-news-lettern bg-cover">
         <div class="container px-6 mx-auto">
           <div class="mx-auto flex flex-col items-center justify-center gap-6 py-14 lg:py-24 md:max-w-lg ">
             <h3 class="text-center text-tertiary-950 text-2xl font-bold md:text-3xl md:leading-relaxed">Get Leatest Update By Subscribe 0ur Newslater</h3>
@@ -322,7 +837,7 @@
       <section class="my-14 xl:my-24">
         <div class="container px-6 mx-auto">
           <!-- Component: Carousel with controls inside -->
-          <div class="relative xl:w-4/5 mx-auto glide-partners">
+          <div class="relative xl:w-4/5 mx-auto" id="glide-partners">
             <!-- Slides -->
             <div class="overflow-hidden" data-glide-el="track">
                 <ul class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
@@ -349,7 +864,7 @@
           <div class="grid grid-cols-4 gap-8 md:grid-cols-8 lg:grid-cols-12 lg:gap-14 ">
             <div class="col-span-4">
               <!-- Component: Blog card with avatar -->
-              <div class="overflow-hidden bg-white rounded-lg shadow-[0px_8px_40px_0px_rgba(0,0,0,0.05)] text-slate-500">
+              <article class="overflow-hidden bg-white rounded-lg shadow-[0px_8px_40px_0px_rgba(0,0,0,0.05)] text-slate-500">
                 <!-- Image -->
                 <figure>
                   <img src="/hekto/assets/latest-blog-1-4e1c5db0.jpg" alt="card image" class="aspect-video w-full rounded-lg" />
@@ -381,14 +896,16 @@
                     <h3 class="text-lg font-bold text-tertiary-950">Top esssential Trends in 2021</h3>
                   </header>
                   <p class="font-lato leading-7 text-[#72718F] md:line-clamp-2 mb-4">Following the journey of history and culture, is a journey through the beautiful green rice paddies, and endless golden fields! Dotted amongst the countryside are bustling towns, with a vibrant atmosphere and great cafe culture.</p>
-                  <a href="#" class="text-tertiary-950 font-lato py-2 transition-colors duration-300 underline hover:text-primary-500">Read More</a>
+                  <footer>
+                    <a href="#" class="text-tertiary-950 font-lato py-2 transition-colors duration-300 underline hover:text-primary-500">Read More</a>
+                  </footer>
                 </div>
-              </div>
+              </article>
               <!-- End Blog card with avatar -->
             </div>
             <div class="col-span-4">
               <!-- Component: Blog card with avatar -->
-              <div class="overflow-hidden bg-white rounded-lg shadow-[0px_8px_40px_0px_rgba(0,0,0,0.05)] text-slate-500">
+              <article class="overflow-hidden bg-white rounded-lg shadow-[0px_8px_40px_0px_rgba(0,0,0,0.05)] text-slate-500">
                 <!-- Image -->
                 <figure>
                   <img src="/hekto/assets/latest-blog-2-378acc1f.jpg" alt="card image" class="aspect-video w-full rounded-lg" />
@@ -420,14 +937,16 @@
                     <h3 class="text-lg font-bold text-tertiary-950">Top esssential Trends in 2021</h3>
                   </header>
                   <p class="font-lato leading-7 text-[#72718F] md:line-clamp-2 mb-4">Following the journey of history and culture, is a journey through the beautiful green rice paddies, and endless golden fields! Dotted amongst the countryside are bustling towns, with a vibrant atmosphere and great cafe culture.</p>
-                  <a href="#" class="text-tertiary-950 font-lato py-2 transition-colors duration-300 underline hover:text-primary-500">Read More</a>
+                  <footer>
+                    <a href="#" class="text-tertiary-950 font-lato py-2 transition-colors duration-300 underline hover:text-primary-500">Read More</a>
+                  </footer>
                 </div>
-              </div>
+              </article>
               <!-- End Blog card with avatar -->
             </div>
             <div class="col-span-4">
               <!-- Component: Blog card with avatar -->
-              <div class="overflow-hidden bg-white rounded-lg shadow-[0px_8px_40px_0px_rgba(0,0,0,0.05)] text-slate-500">
+              <article class="overflow-hidden bg-white rounded-lg shadow-[0px_8px_40px_0px_rgba(0,0,0,0.05)] text-slate-500">
                 <!-- Image -->
                 <figure>
                   <img src="/hekto/assets/latest-blog-3-31c2a037.jpg" alt="card image" class="aspect-video w-full rounded-lg" />
@@ -459,9 +978,11 @@
                     <h3 class="text-lg font-bold text-tertiary-950">Top esssential Trends in 2021</h3>
                   </header>
                   <p class="font-lato leading-7 text-[#72718F] md:line-clamp-2 mb-4">Following the journey of history and culture, is a journey through the beautiful green rice paddies, and endless golden fields! Dotted amongst the countryside are bustling towns, with a vibrant atmosphere and great cafe culture.</p>
-                  <a href="#" class="text-tertiary-950 font-lato py-2 transition-colors duration-300 underline hover:text-primary-500">Read More</a>
+                  <footer>
+                    <a href="#" class="text-tertiary-950 font-lato py-2 transition-colors duration-300 underline hover:text-primary-500">Read More</a>
+                  </footer>
                 </div>
-              </div>
+              </article>
               <!-- End Blog card with avatar -->
             </div>
           </div>
@@ -514,22 +1035,22 @@
                 <h3 class="mb-4 lg:mb-10 text-xl font-josefin font-semibold text-black" id="footer-about-dark">Pages</h3>
                 <ul>
                   <li class="mb-4 leading-6">
-                    <a href="javascript:void(0)" class="transition-colors duration-300 hover:text-emerald-500 hover:text-primary-500 hover:underline focus:text-primary-500"> Blog </a>
+                    <a href="javascript:void(0)" class="transition-colors duration-300 hover:text-primary-500 hover:underline focus:text-primary-500"> Blog </a>
                   </li>
                   <li class="mb-4 leading-6">
-                    <a href="javascript:void(0)" class="transition-colors duration-300 hover:text-emerald-500 hover:text-primary-500 hover:underline focus:text-primary-500"> Browse the Shop </a>
+                    <a href="javascript:void(0)" class="transition-colors duration-300 hover:text-primary-500 hover:underline focus:text-primary-500"> Browse the Shop </a>
                   </li>
                   <li class="mb-4 leading-6">
-                    <a href="javascript:void(0)" class="transition-colors duration-300 hover:text-emerald-500 hover:text-primary-500 hover:underline focus:text-primary-500"> Category </a>
+                    <a href="javascript:void(0)" class="transition-colors duration-300 hover:text-primary-500 hover:underline focus:text-primary-500"> Category </a>
                   </li>
                   <li class="mb-4 leading-6">
-                    <a href="javascript:void(0)" class="transition-colors duration-300 hover:text-emerald-500 hover:text-primary-500 hover:underline focus:text-primary-500"> Pre-Built Pages </a>
+                    <a href="javascript:void(0)" class="transition-colors duration-300 hover:text-primary-500 hover:underline focus:text-primary-500"> Pre-Built Pages </a>
                   </li>
                   <li class="mb-4 leading-6">
-                    <a href="javascript:void(0)" class="transition-colors duration-300 hover:text-emerald-500 hover:text-primary-500 hover:underline focus:text-primary-500"> Visual Composer Elements </a>
+                    <a href="javascript:void(0)" class="transition-colors duration-300 hover:text-primary-500 hover:underline focus:text-primary-500"> Visual Composer Elements </a>
                   </li>
                   <li class="mb-4 leading-6">
-                    <a href="javascript:void(0)" class="transition-colors duration-300 hover:text-emerald-500 hover:text-primary-500 hover:underline focus:text-primary-500"> WooCommerce Pages </a>
+                    <a href="javascript:void(0)" class="transition-colors duration-300 hover:text-primary-500 hover:underline focus:text-primary-500"> WooCommerce Pages </a>
                   </li>
                 </ul>
               </nav>
@@ -537,19 +1058,19 @@
                 <h3 class="mb-4 lg:mb-10 text-xl font-josefin font-semibold text-black" id="footer-docs-dark">Customer Care</h3>
                 <ul>
                   <li class="mb-4 leading-6">
-                    <a href="javascript:void(0)" class="transition-colors duration-300 hover:text-emerald-500 hover:text-primary-500 hover:underline focus:text-primary-500"> My Account</a>
+                    <a href="javascript:void(0)" class="transition-colors duration-300 hover:text-primary-500 hover:underline focus:text-primary-500"> My Account</a>
                   </li>
                   <li class="mb-4 leading-6">
-                    <a href="javascript:void(0)" class="transition-colors duration-300 hover:text-emerald-500 hover:text-primary-500 hover:underline focus:text-primary-500"> Discount </a>
+                    <a href="javascript:void(0)" class="transition-colors duration-300 hover:text-primary-500 hover:underline focus:text-primary-500"> Discount </a>
                   </li>
                   <li class="mb-4 leading-6">
-                    <a href="javascript:void(0)" class="transition-colors duration-300 hover:text-emerald-500 hover:text-primary-500 hover:underline focus:text-primary-500"> Returns </a>
+                    <a href="javascript:void(0)" class="transition-colors duration-300 hover:text-primary-500 hover:underline focus:text-primary-500"> Returns </a>
                   </li>
                   <li class="mb-4 leading-6">
-                    <a href="javascript:void(0)" class="transition-colors duration-300 hover:text-emerald-500 hover:text-primary-500 hover:underline focus:text-primary-500"> Orders History </a>
+                    <a href="javascript:void(0)" class="transition-colors duration-300 hover:text-primary-500 hover:underline focus:text-primary-500"> Orders History </a>
                   </li>
                   <li class="mb-4 leading-6">
-                    <a href="javascript:void(0)" class="transition-colors duration-300 hover:text-emerald-500 hover:text-primary-500 hover:underline focus:text-primary-500"> Order Tracking </a>
+                    <a href="javascript:void(0)" class="transition-colors duration-300 hover:text-primary-500 hover:underline focus:text-primary-500"> Order Tracking </a>
                   </li>
                 </ul>
               </nav>
