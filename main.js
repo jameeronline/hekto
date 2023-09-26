@@ -12,6 +12,38 @@ window.Alpine = Alpine
 Alpine.start()
 
 
+
+//List.js - product filter
+import List from 'list.js';
+
+var options = {
+    valueNames: [
+        { data: ['product-category'] }
+    ]
+};
+
+var latestProductList = new List('grid-latest-products', options);
+
+
+const latestProductFilters = document.querySelectorAll('#latest-products-filter a');
+
+latestProductFilters.forEach(el => {
+    el.addEventListener('click', () => {
+        let itemVal = el.dataset.filter;
+        if(itemVal == '*'){
+            latestProductList.filter();
+        }else{
+            latestProductList.filter(function(item) {
+                if (item.values()['product-category'] == itemVal) {
+                    return true;
+                } else {
+                    return false;
+                }
+            });
+        }
+    });
+})
+
 //GlideJS slider
 import Glide from '@glidejs/glide'
 
@@ -19,7 +51,7 @@ import Glide from '@glidejs/glide'
 var glideCategories = new Glide('#glide-featured', {
     type: 'carousel',
     startAt: 1,
-    animationDuration: 4000,
+    animationDuration: 1000,
     autoplay: false,
     rewind: true,
     perView: 4,
@@ -45,8 +77,8 @@ glideCategories.mount();
 var glideCategories = new Glide('#glide-categories', {
     type: 'carousel',
     focusAt: 1,
-    animationDuration: 4000,
-    autoplay: true,
+    animationDuration: 1000,
+    autoplay: false,
     rewind: true,
     perView: 4,
     gap: 48,
@@ -57,9 +89,12 @@ var glideCategories = new Glide('#glide-categories', {
     },
     breakpoints: {
         1024: {
-            perView: 2
+            perView: 3
         },
         640: {
+            perView: 2
+        },
+        480: {
             perView: 1
         }
     },

@@ -11,7 +11,7 @@
     <header>
       <!-- start - top header -->
       <div class="bg-purple py-4">
-        <div class="container px-6 mx-auto">
+        <div class="xl:container px-6 mx-auto">
           <div class="flex justify-between">
             <!-- start | left list -->
             <nav>
@@ -147,7 +147,7 @@
 
       <!-- start - main header -->
       <div class="py-5">
-        <div class="container px-6 mx-auto">
+        <div class="xl:container px-6 mx-auto">
           <div class="flex items-center">
             <a href="#" class="text-4xl font-semibold text-darlblue">Hekto</a>
             <nav class="ml-20">
@@ -198,7 +198,7 @@
 
       <!-- START - Featured Products -->
       <section class="my-10">
-        <div class="container px-6 mx-auto">
+        <div class="xl:container px-6 mx-auto">
           <h2 class="text-center text-tertiary-950 text-2xl mb-6 lg:text-4xl lg:mb-12 font-bold">Featured Products</h2>
 
           <!-- Component: carousel -->
@@ -422,10 +422,10 @@
             </div>
             <!-- Indicators -->
             <div class="flex items-center justify-center w-full gap-2 mt-8" data-glide-el="controls[nav]">
-                <button class="group" data-glide-dir="=0" aria-label="goto slide 1"><span class="block h-1 w-4 transition-colors duration-300 rounded-full opacity-70 bg-primary-200 bg-white/20 focus:outline-none"></span></button>
-                <button class="group" data-glide-dir="=1" aria-label="goto slide 2"><span class="block h-1 w-4 transition-colors duration-300 rounded-full opacity-70 bg-primary-200 bg-white/20 focus:outline-none"></span></button>
-                <button class="group" data-glide-dir="=2" aria-label="goto slide 3"><span class="block h-1 w-4 transition-colors duration-300 rounded-full opacity-70 bg-primary-200 bg-white/20 focus:outline-none"></span></button>
-                <button class="group" data-glide-dir="=3" aria-label="goto slide 4"><span class="block h-1 w-4 transition-colors duration-300 rounded-full opacity-70 bg-primary-200 bg-white/20 focus:outline-none"></span></button>
+                <button class="group" data-glide-dir="=0" aria-label="goto slide 1"><span class="block h-1 w-4 transition-colors duration-300 rounded-full opacity-70 bg-primary-200 focus:outline-none"></span></button>
+                <button class="group" data-glide-dir="=1" aria-label="goto slide 2"><span class="block h-1 w-4 transition-colors duration-300 rounded-full opacity-70 bg-primary-200 focus:outline-none"></span></button>
+                <button class="group" data-glide-dir="=2" aria-label="goto slide 3"><span class="block h-1 w-4 transition-colors duration-300 rounded-full opacity-70 bg-primary-200 focus:outline-none"></span></button>
+                <button class="group" data-glide-dir="=3" aria-label="goto slide 4"><span class="block h-1 w-4 transition-colors duration-300 rounded-full opacity-70 bg-primary-200 focus:outline-none"></span></button>
             </div>
           </div>
           <!-- End carousel -->
@@ -436,20 +436,21 @@
 
       <!-- START - Latest Products -->
       <section class="my-10">
-        <div class="container px-6 mx-auto">
-          <h2 class="text-center text-tertiary-950 text-2xl mb-5 font-bold lg:text-4xl">Latest Products</h2>
+        <div class="xl:container px-6 mx-auto">
+          <h2 class="text-center text-tertiary-950 text-2xl mb-14 font-bold lg:text-4xl">Latest Products</h2>
 
-          <nav class="flex justify-center gap-6 mb-14">
-            <a href="#" class="text-tertiary-950 transition-colors duration-300 hover:text-primary-500 hover:underline">New Arrival</a>
-            <a href="#" class="text-tertiary-950 transition-colors duration-300 hover:text-primary-500 hover:underline">Best Seller</a>
-            <a href="#" class="text-tertiary-950 transition-colors duration-300 hover:text-primary-500 hover:underline">Featured</a>
-            <a href="#" class="text-tertiary-950 transition-colors duration-300 hover:text-primary-500 hover:underline">Special Offer</a>
+          <nav class="flex justify-center gap-6 mb-8" id="latest-products-filter" x-data="{ filter: '*' }">
+            <a x-on:click="filter = '*'" data-filter="*" href="javascript:void(0)" class="transition-colors duration-300 hover:text-primary-500 hover:underline" :class="filter == '*' ? 'text-primary-500':'text-tertiary-950'">All</a>
+            <a x-on:click="filter = 'new'" data-filter="new" href="javascript:void(0)" class="transition-colors duration-300 hover:text-primary-500 hover:underline" :class="filter == 'new' ? 'text-primary-500':'text-tertiary-950'">New Arrival</a>
+            <a x-on:click="filter = 'bestseller'" data-filter="bestseller" href="javascript:void(0)" class="transition-colors duration-300 hover:text-primary-500 hover:underline" :class="filter == 'bestseller' ? 'text-primary-500':'text-tertiary-950'">Best Seller</a>
+            <a x-on:click="filter = 'featured'" data-filter="featured" href="javascript:void(0)" class="transition-colors duration-300 hover:text-primary-500 hover:underline" :class="filter == 'featured' ? 'text-primary-500':'text-tertiary-950'">Featured</a>
+            <a x-on:click="filter = 'special-offer'" data-filter="special-offer" href="javascript:void(0)" class="transition-colors duration-300 hover:text-primary-500 hover:underline" :class="filter == 'special-offer' ? 'text-primary-500':'text-tertiary-950'">Special Offer</a>
           </nav>
 
           <!-- Component: grid -->
           <div class="relative overflow-hidden w-full" id="grid-latest-products">
-            <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
-              <div class="col-span-2 md:col-span-4">
+            <ul class="list grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
+              <li class="col-span-2 md:col-span-4" data-product-category="new">
                 <!-- Component: Latest card -->
                 <article class="group overflow-hidden">
                   <!-- Image -->
@@ -478,7 +479,7 @@
                       </li>
                     </ul>
 
-                    <img src="./src/images/furniture/5.png" alt="card image" class="transition-transform duration-300 scale-[0.6] group-hover:scale-75" />
+                    <img src="./src/images/furniture/5.png" alt="card image" class="transition-transform duration-300 scale-[0.6] group-hover:scale-75 group-hover:-rotate-6" />
                   </figure>
                   <!-- Body-->
                   <div class="py-6 text-center">
@@ -489,8 +490,8 @@
                   </div>
                 </article>
                 <!-- End Latest card -->
-              </div>
-              <div class="col-span-2 md:col-span-4">
+              </li>
+              <li class="col-span-2 md:col-span-4" data-product-category="bestseller">
                 <!-- Component: Latest card -->
                 <article class="group overflow-hidden">
                   <!-- Image -->
@@ -519,7 +520,7 @@
                       </li>
                     </ul>
 
-                    <img src="./src/images/furniture/6.png" alt="card image" class="transition-transform duration-300 scale-[0.6] group-hover:scale-75" />
+                    <img src="./src/images/furniture/6.png" alt="card image" class="transition-transform duration-300 scale-[0.6] group-hover:scale-75 group-hover:-rotate-6" />
                   </figure>
                   <!-- Body-->
                   <div class="py-6 text-center">
@@ -530,8 +531,8 @@
                   </div>
                 </article>
                 <!-- End Latest card -->
-              </div>
-              <div class="col-span-2 md:col-span-4">
+              </li>
+              <li class="col-span-2 md:col-span-4" data-product-category="featured">
                 <!-- Component: Latest card -->
                 <article class="group overflow-hidden">
                   <!-- Image -->
@@ -560,7 +561,7 @@
                       </li>
                     </ul>
 
-                    <img src="./src/images/furniture/1.png" alt="card image" class="transition-transform duration-300 scale-[0.6] group-hover:scale-75" />
+                    <img src="./src/images/furniture/1.png" alt="card image" class="transition-transform duration-300 scale-[0.6] group-hover:scale-75 group-hover:-rotate-6" />
                   </figure>
                   <!-- Body-->
                   <div class="py-6 text-center">
@@ -571,8 +572,8 @@
                   </div>
                 </article>
                 <!-- End Latest card -->
-              </div>
-              <div class="col-span-2 md:col-span-4">
+              </li>
+              <li class="col-span-2 md:col-span-4" data-product-category="special-offer">
                 <!-- Component: Latest card -->
                 <article class="group overflow-hidden">
                   <!-- Image -->
@@ -601,7 +602,7 @@
                       </li>
                     </ul>
 
-                    <img src="./src/images/furniture/7.png" alt="card image" class="transition-transform duration-300 scale-[0.6] group-hover:scale-75" />
+                    <img src="./src/images/furniture/7.png" alt="card image" class="transition-transform duration-300 scale-[0.6] group-hover:scale-75 group-hover:-rotate-6" />
                   </figure>
                   <!-- Body-->
                   <div class="py-6 text-center">
@@ -612,8 +613,8 @@
                   </div>
                 </article>
                 <!-- End Latest card -->
-              </div>
-              <div class="col-span-2 md:col-span-4">
+              </li>
+              <li class="col-span-2 md:col-span-4" data-product-category="new">
                 <!-- Component: Latest card -->
                 <article class="group overflow-hidden">
                   <!-- Image -->
@@ -642,7 +643,7 @@
                       </li>
                     </ul>
 
-                    <img src="./src/images/furniture/8.png" alt="card image" class="transition-transform duration-300 scale-[0.6] group-hover:scale-75" />
+                    <img src="./src/images/furniture/8.png" alt="card image" class="transition-transform duration-300 scale-[0.6] group-hover:scale-75 group-hover:-rotate-6" />
                   </figure>
                   <!-- Body-->
                   <div class="py-6 text-center">
@@ -653,8 +654,8 @@
                   </div>
                 </article>
                 <!-- End Latest card -->
-              </div>
-              <div class="col-span-2 md:col-span-4">
+              </li>
+              <li class="col-span-2 md:col-span-4" data-product-category="bestseller">
                 <!-- Component: Latest card -->
                 <article class="group overflow-hidden">
                   <!-- Image -->
@@ -683,7 +684,7 @@
                       </li>
                     </ul>
 
-                    <img src="./src/images/furniture/4.png" alt="card image" class="transition-transform duration-300 scale-[0.6] group-hover:scale-75" />
+                    <img src="./src/images/furniture/4.png" alt="card image" class="transition-transform duration-300 scale-[0.6] group-hover:scale-75 group-hover:-rotate-6" />
                   </figure>
                   <!-- Body-->
                   <div class="py-6 text-center">
@@ -694,8 +695,8 @@
                   </div>
                 </article>
                 <!-- End Latest card -->
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
 
         </div>
@@ -704,7 +705,7 @@
 
 
       <!-- START - Top Categories -->
-      <section class="my-10">
+      <section class="my-24">
         <div class="container px-6 mx-auto">
           <h2 class="text-center text-tertiary-950 text-2xl mb-6 lg:text-4xl lg:mb-14 font-bold">Top Categories</h2>
 
@@ -804,7 +805,7 @@
                 </ul>
             </div>
             <!-- Indicators -->
-            <div class="flex items-center justify-center w-full gap-2 -mt-6" data-glide-el="controls[nav]">
+            <div class="flex items-center justify-center w-full -mt-6" data-glide-el="controls[nav]">
                 <button class="p-2 group" data-glide-dir="=0" aria-label="goto slide 1"><span class="block w-2 h-2 transition-colors duration-300 rounded-full opacity-70 ring-1 ring-primary-500 bg-white/20 focus:outline-none"></span></button>
                 <button class="p-2 group" data-glide-dir="=1" aria-label="goto slide 2"><span class="block w-2 h-2 transition-colors duration-300 rounded-full opacity-70 ring-1 ring-primary-500 bg-white/20 focus:outline-none"></span></button>
                 <button class="p-2 group" data-glide-dir="=2" aria-label="goto slide 3"><span class="block w-2 h-2 transition-colors duration-300 rounded-full opacity-70 ring-1 ring-primary-500 bg-white/20 focus:outline-none"></span></button>
@@ -817,7 +818,7 @@
       <!-- END - Top Categories -->
 
       <!-- START - newsletter -->
-      <section class="relative bg-news-lettern bg-cover">
+      <section class="relative bg-emphasis-50 bg-news-lettern bg-cover">
         <div class="container px-6 mx-auto">
           <div class="mx-auto flex flex-col items-center justify-center gap-6 py-14 lg:py-24 md:max-w-lg ">
             <h3 class="text-center text-tertiary-950 text-2xl font-bold md:text-3xl md:leading-relaxed">Get Leatest Update By Subscribe 0ur Newslater</h3>
@@ -839,14 +840,14 @@
             <!-- Slides -->
             <div class="overflow-hidden" data-glide-el="track">
                 <ul class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
-                    <li class="flex items-center"><img src="./src/images/logos/dribbble-logo.svg" class="w-40 m-auto grayscale opacity-70" /></li>
-                    <li class="flex items-center"><img src="./src/images/logos/dropbox-logo.svg" class="w-40 m-auto grayscale opacity-70" /></li>
-                    <li class="flex items-center"><img src="./src/images/logos/github-logo.svg" class="w-40 m-auto grayscale opacity-70" /></li>
-                    <li class="flex items-center"><img src="./src/images/logos/jira-software-logo.svg" class="w-40 m-auto grayscale opacity-70" /></li>
-                    <li class="flex items-center"><img src="./src/images/logos/miro-logo.svg" class="w-40 m-auto grayscale opacity-70" /></li>
-                    <li class="flex items-center"><img src="./src/images/logos/pingdom-logo.svg" class="w-40 m-auto grayscale opacity-70" /></li>
-                    <li class="flex items-center"><img src="./src/images/logos/unsplash-logo.svg" class="w-40 m-auto grayscale opacity-70" /></li>
-                    <li class="flex items-center"><img src="./src/images/logos/webflow-logo.svg" class="w-40 m-auto grayscale opacity-70" /></li>
+                    <li class="flex items-center"><a href="#" target="_blank" rel="external"><img src="./src/images/logos/dribbble-logo.svg" class="w-40 m-auto grayscale opacity-70 transition duration-300 hover:grayscale-0 hover:opacity-90" /></a></li>
+                    <li class="flex items-center"><a href="#" target="_blank" rel="external"><img src="./src/images/logos/dropbox-logo.svg" class="w-40 m-auto grayscale opacity-70 transition duration-300 hover:grayscale-0 hover:opacity-90" /></a></li>
+                    <li class="flex items-center"><a href="#" target="_blank" rel="external"><img src="./src/images/logos/github-logo.svg" class="w-40 m-auto grayscale opacity-70 transition duration-300 hover:grayscale-0 hover:opacity-90" /></a></li>
+                    <li class="flex items-center"><a href="#" target="_blank" rel="external"><img src="./src/images/logos/jira-software-logo.svg" class="w-40 m-auto grayscale opacity-70 transition duration-300 hover:grayscale-0 hover:opacity-90" /></a></li>
+                    <li class="flex items-center"><a href="#" target="_blank" rel="external"><img src="./src/images/logos/miro-logo.svg" class="w-40 m-auto grayscale opacity-70 transition duration-300 hover:grayscale-0 hover:opacity-90" /></a></li>
+                    <li class="flex items-center"><a href="#" target="_blank" rel="external"><img src="./src/images/logos/pingdom-logo.svg" class="w-40 m-auto grayscale opacity-70 transition duration-300 hover:grayscale-0 hover:opacity-90" /></a></li>
+                    <li class="flex items-center"><a href="#" target="_blank" rel="external"><img src="./src/images/logos/unsplash-logo.svg" class="w-40 m-auto grayscale opacity-70 transition duration-300 hover:grayscale-0 hover:opacity-90" /></a></li>
+                    <li class="flex items-center"><a href="#" target="_blank" rel="external"><img src="./src/images/logos/webflow-logo.svg" class="w-40 m-auto grayscale opacity-70 transition duration-300 hover:grayscale-0 hover:opacity-90" /></a></li>
                 </ul>
             </div>
           </div>
@@ -856,16 +857,16 @@
       <!-- END - Partners -->
 
       <!-- START - Latest Blogs -->
-      <section class="my-10">
-        <div class="container px-6 mx-auto">
+      <section class="my-24">
+        <div class="xl:container px-6 mx-auto">
           <h2 class="text-center text-tertiary-950 text-2xl mb-6 lg:text-4xl lg:mb-20 font-bold">Leatest Blog</h2>
           <div class="grid grid-cols-4 gap-8 md:grid-cols-8 lg:grid-cols-12 lg:gap-14 ">
             <div class="col-span-4">
               <!-- Component: Blog card with avatar -->
               <article class="overflow-hidden bg-white rounded-lg shadow-[0px_8px_40px_0px_rgba(0,0,0,0.05)] text-slate-500">
                 <!-- Image -->
-                <figure>
-                  <img src="./src/images/latest-blog-1.jpg" alt="card image" class="aspect-video w-full rounded-lg" />
+                <figure class="overflow-hidden group">
+                  <img src="./src/images/latest-blog-1.jpg" alt="card image" class="aspect-video w-full rounded-lg transition-transform duration-300 group-hover:scale-125" />
                 </figure>
                 <!-- Body-->
                 <div class="px-6 pt-5 pb-9">
@@ -905,8 +906,8 @@
               <!-- Component: Blog card with avatar -->
               <article class="overflow-hidden bg-white rounded-lg shadow-[0px_8px_40px_0px_rgba(0,0,0,0.05)] text-slate-500">
                 <!-- Image -->
-                <figure>
-                  <img src="./src/images/latest-blog-2.jpg" alt="card image" class="aspect-video w-full rounded-lg" />
+                <figure class="overflow-hidden group">
+                  <img src="./src/images/latest-blog-2.jpg" alt="card image" class="aspect-video w-full rounded-lg transition-transform duration-300 group-hover:scale-125" />
                 </figure>
                 <!-- Body-->
                 <div class="px-6 pt-5 pb-9">
@@ -946,8 +947,8 @@
               <!-- Component: Blog card with avatar -->
               <article class="overflow-hidden bg-white rounded-lg shadow-[0px_8px_40px_0px_rgba(0,0,0,0.05)] text-slate-500">
                 <!-- Image -->
-                <figure>
-                  <img src="./src/images/latest-blog-3.jpg" alt="card image" class="aspect-video w-full rounded-lg" />
+                <figure class="overflow-hidden group">
+                  <img src="./src/images/latest-blog-3.jpg" alt="card image" class="aspect-video w-full rounded-lg transition-transform duration-300 group-hover:scale-125" />
                 </figure>
                 <!-- Body-->
                 <div class="px-6 pt-5 pb-9">
@@ -992,15 +993,15 @@
     <!-- END - Main -->
 
     <!-- START - Footer -->
-    <footer class="text-regentgrey font-lato">
+    <footer class="text-emphasis-500 font-lato">
       <!-- Main footer -->
-      <div class="pt-16 pb-12 text-base bg-lightnavyblue">
-        <div class="container px-6 mx-auto">
+      <div class="pt-16 pb-12 text-base bg-accent-50">
+        <div class="xl:container px-6 mx-auto">
           <div class="grid grid-cols-4 gap-4 md:gap-6 md:grid-cols-8 lg:grid-cols-12">
             <div class="col-span-4 mb-8 lg:mb-auto md:col-span-8 lg:col-span-4" aria-labelledby="footer-header">
               <a href="javascript:void(0)" class="inline-flex text-3xl font-josefin font-bold text-darlblue mb-8">Hekto</a>
               <form action="" class="flex mb-6">
-                <input type="text" class="form-input flex-1 border-offwhite rounded-md rounded-e-none placeholder:text-regentgrey " placeholder="Enter Email Address" />
+                <input type="text" class="form-input flex-1 border-offwhite rounded-md rounded-e-none placeholder:text-emphasis-500 " placeholder="Enter Email Address" />
                 <button type="button" class="inline-block font-semibold bg-primary-500 py-2 px-6 rounded-md rounded-s-none text-white">
                   Sign Up
                 </button>
@@ -1077,15 +1078,15 @@
         </div>
       </div>
       <!-- Sub Footer -->
-      <div class="py-4 text-base bg-[#E7E4F8]">
-        <div class="container px-6 mx-auto">
+      <div class="py-4 text-base bg-accent-100">
+        <div class="xl:container px-6 mx-auto">
           <div class="grid grid-cols-4 gap-4 md:gap-6 md:grid-cols-8 lg:grid-cols-12">
             <div class="col-span-4 text-center md:text-left md:col-span-4 lg:col-span-6">©Hekto - All Rights Reserved</div>
             <nav aria-labelledby="footer-social-links-dark" class="col-span-4 text-center md:text-right md:col-span-4 lg:col-span-6">
               <h2 class="sr-only" id="footer-social-links-dark">Social Media Links</h2>
               <ul class="flex items-center justify-center md:justify-end gap-4">
                 <li>
-                  <a href="javascript:void(0)" class="transition-colors inline-flex items-center justify-center p-1 rounded-full bg-tertext-tertiary-950 text-white duration-300 hover:bg-tertext-tertiary-950/50">
+                  <a href="javascript:void(0)" class="transition-colors inline-flex items-center justify-center p-1 rounded-full bg-tertiary-950 text-white duration-300 hover:bg-tertiary-950/50">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" height="16" width="16" class="w-4 h-4 shrink-0" role="graphics-symbol" aria-labelledby="title-tb01-dark desc-tb01-dark">
                       <title id="title-tb01-dark">Icon title</title>
                       <desc id="desc-tb01-dark">A more detailed description of the icon</desc>
@@ -1094,7 +1095,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)" class="transition-colors inline-flex items-center justify-center p-1 rounded-full bg-tertext-tertiary-950 text-white duration-300 hover:bg-tertext-tertiary-950/50">
+                  <a href="javascript:void(0)" class="transition-colors inline-flex items-center justify-center p-1 rounded-full bg-tertiary-950 text-white duration-300 hover:bg-tertiary-950/50">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" height="16" width="16" class="w-4 h-4 shrink-0" role="graphics-symbol" aria-labelledby="title-tb02-dark desc-tb02-dark">
                       <title id="title-tb02-dark">Icon title</title>
                       <desc id="desc-tb02-dark">A more detailed description of the icon</desc>
@@ -1103,7 +1104,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)" class="transition-colors inline-flex items-center justify-center p-1 rounded-full bg-tertext-tertiary-950 text-white duration-300 hover:bg-tertext-tertiary-950/50">
+                  <a href="javascript:void(0)" class="transition-colors inline-flex items-center justify-center p-1 rounded-full bg-tertiary-950 text-white duration-300 hover:bg-tertiary-950/50">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" height="16" width="16" class="w-4 h-4 shrink-0" role="graphics-symbol" aria-labelledby="title-tb03-dark desc-tb03-dark">
                       <title id="title-tb03-dark">Icon title</title>
                       <desc id="desc-tb03-dark">A more detailed description of the icon</desc>

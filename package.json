@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.6.0",
-    "alpinejs": "^3.13.0"
+    "alpinejs": "^3.13.0",
+    "list.js": "^2.3.1"
   }
 }
