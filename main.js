@@ -102,6 +102,32 @@ var glideCategories = new Glide('#glide-categories', {
 
 glideCategories.mount();
 
+//Trending slide
+var glideTrending = new Glide('#glide-trending', {
+    type: 'carousel',
+    startAt: 1,
+    animationDuration: 1000,
+    autoplay: false,
+    rewind: true,
+    perView: 4,
+    gap: 24,
+    classes: {
+        nav: {
+            active: '[&>*]:bg-primary-500',
+        }
+    },
+    breakpoints: {
+        1024: {
+            perView: 2
+        },
+        640: {
+            perView: 1
+        }
+    },
+});
+
+glideTrending.mount();
+
 //Partners slide
 var glidePartners = new Glide('#glide-partners', {
   type: 'carousel',

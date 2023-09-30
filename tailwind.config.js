@@ -15,6 +15,7 @@ export default {
     extend: {
       backgroundImage: {
         'news-lettern': "url('./src/images/newsletter-bg.png')",
+        'blob-bg': "url(./src/images/svg/blobanimation.svg)"
       },
       colors: {
         'pink': '#FB2E86',
